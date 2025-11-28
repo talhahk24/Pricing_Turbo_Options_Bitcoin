@@ -1,6 +1,6 @@
 # Pricing Turbo Options on Bitcoin
 
-A portfolio-ready analysis notebook that prices deep-in-the-money barrier ("turbo") options on Bitcoin and explores Greek behavior across models. The project mixes practical market data ingestion with multiple option pricing engines so you can demonstrate quant and data skills to hiring managers and recruiters.
+A portfolio-ready analysis notebook that prices deep-in-the-money barrier ("turbo") options on Bitcoin and explores Greek behavior across models. The project mixes practical market data ingestion with multiple option pricing engines.
 
 ## Repository contents
 - `IEDA_4331_PROJECT_BARRIER.ipynb`: Colab-friendly research notebook containing data ingestion, pricing functions, experiments, and validation checks.
@@ -28,17 +28,8 @@ A portfolio-ready analysis notebook that prices deep-in-the-money barrier ("turb
    ```
    Or click the "Open in Colab" badge at the top of the notebook to run it in the cloud.
 
-## How to talk about this project in interviews
-- **Problem framing:** "I priced turbo barrier options on Bitcoin using both analytical (Black-Scholes) and lattice (binomial/trinomial) approaches, then stress-tested the models across volatility, tenor, and barrier levels."
-- **Data & engineering:** "I automated BTC price ingestion with `yfinance`, cleaned the series, and derived annualized volatility from log returns as model inputs."
-- **Modeling choices:** "Binomial and trinomial trees let me handle American exercise and barrier behavior, while Black-Scholes provided a closed-form baseline for European contracts."
-- **Validation:** "I verified convergence of the lattices, checked put-call and in/out parity relationships, and compared outputs against vanilla prices to ensure numerical stability."
 
-## Resume-ready bullet prompts
-- Built a Python notebook that prices Bitcoin turbo (barrier) options using Black-Scholes plus binomial/trinomial trees, validating parity relationships and convergence to ensure accuracy.
-- Engineered a reproducible workflow that fetches market data, estimates volatility, and visualizes pricing/Greeks to explain risk sensitivities to non-technical stakeholders.
-
-## Possible next steps
-- Add parameterized widgets (e.g., `ipywidgets`) for interactive scenario analysis during interviews or demos.
+## Next steps
+- Add parameterized widgets (e.g., `ipywidgets`) for interactive scenario analysis or demos.
 - Export selected experiments as static plots for a short portfolio PDF or slide deck.
 - Package core pricers into a lightweight module for reuse in other crypto derivatives analyses.
